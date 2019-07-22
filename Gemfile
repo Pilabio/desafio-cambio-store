@@ -10,7 +10,6 @@ gem 'dotenv-rails',   '~> 2.7', '>= 2.7.4'
 gem 'foreman',        '~> 0.85.0'
 gem 'jbuilder',       '~> 2.5'
 gem 'mini_racer',     platforms: :ruby
-# Use pg on sqlight's place
 gem 'pg',             '~> 1.1', '>= 1.1.4'
 gem 'puma',           '~> 3.11'
 gem 'rails',          '~> 5.2.3'
