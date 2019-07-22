@@ -21,19 +21,27 @@ gem 'uglifier',       '>= 1.3.0'
 gem 'webpacker',      '~> 4.x'
 
 group :development, :test do
-  gem 'byebug', platforms: %i[mri mingw x64_mingw]
+  gem 'better_errors',         '~> 2.5', '>= 2.5.1'
+  gem 'bullet',                '~> 6.0', '>= 6.0.1'
+  gem 'byebug',                platforms: %i[mri mingw x64_mingw]
+  gem 'factory_bot_rails',     '~> 5.0', '>= 5.0.2'
+  gem 'pry-rails',             '~> 0.3.9'
+  gem 'rspec-rails',           '~> 3.8', '>= 3.8.2'
+  gem 'rubocop-rspec',         '~> 1.31'
+  gem 'spring-commands-rspec', '~> 1.0', '>= 1.0.4'
 end
 
 group :development do
-  gem 'listen', '>= 3.0.5', '< 3.2'
+  gem 'listen',                '>= 3.0.5', '< 3.2'
+  gem 'rubocop',               '~> 0.70.0', require: false
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console',           '>= 3.3.0'
 end
 
 group :test do
-  gem 'capybara', '>= 2.15'
-  gem 'chromedriver-helper'
+  gem 'capybara',         '>= 2.15'
+  gem 'database_cleaner', '~> 1.7'
   gem 'selenium-webdriver'
 end
 
