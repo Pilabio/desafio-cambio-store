@@ -10,6 +10,6 @@ describe 'home/index.html.slim' do
 
     render
 
-    expect(rendered).to match(/123/)
+    expect(rendered).to match(/3,7545/)
   end
 end
