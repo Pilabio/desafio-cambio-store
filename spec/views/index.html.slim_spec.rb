@@ -5,8 +5,7 @@ require 'spec_helper'
 
 describe 'home/index.html.slim' do
   it 'displays coin value correctly' do
-    create(:coin)
-    assign(:coins, Coin.all)
+    assign(:coin, build(:coin))
 
     render
 

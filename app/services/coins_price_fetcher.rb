@@ -7,6 +7,8 @@ module CoinsPriceFetcher
       url = "https://economia.awesomeapi.com.br/all/#{code}-BRL"
 
       request = RestClient.get(url)
+      return {} unless request.code == 200
+
       JSON.parse(request)
     end
   end

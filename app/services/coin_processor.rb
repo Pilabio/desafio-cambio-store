@@ -13,7 +13,7 @@ module CoinProcessor
     private
 
     def find_and_update_coin(json)
-      return Coin.find(1) unless Coin::VALID_CODES.include?(json['code'])
+      return Coin.first if json.nil? || !Coin::VALID_CODES.include?(json['code'])
 
       coin = Coin.find_by_code(json['code'])
 

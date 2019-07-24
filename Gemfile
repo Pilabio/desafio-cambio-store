@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
@@ -45,6 +47,8 @@ group :test do
   gem 'capybara',         '>= 2.15'
   gem 'database_cleaner', '~> 1.7'
   gem 'selenium-webdriver'
+  gem 'vcr',              '~> 5.0'
+  gem 'webmock',          '~> 3.6'
 end
 
 gem 'tzinfo-data', platforms: %i[mingw mswin x64_mingw jruby]

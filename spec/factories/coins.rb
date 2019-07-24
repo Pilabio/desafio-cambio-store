@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Factory for Coin model
 FactoryBot.define do
   factory :coin do
     name { 'MyString' }

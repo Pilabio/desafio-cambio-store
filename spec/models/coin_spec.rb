@@ -1,3 +1,6 @@
+# frozen_string_literal: true
+
+# Coin model spec
 require 'rails_helper'
 
 RSpec.describe Coin, type: :model do
