@@ -1,12 +1,43 @@
 .section
-  // height: 400px
+  width: 100%
 
 .section__title,
 .section__subtitle
   color: #fff
 
 .section__title
+  max-width: 500px
   margin: 0 15px
   text-align: center
   font-size: 20px
   font-weight: bold
+
+  @media (min-width: 516px)
+    margin: 0 auto
+
+.section__body
+  margin-left: 60px
+
+  .section__title
+    max-width: 550px
+    margin: 0
+    font-size: 2em
+    text-align: left
+
+.section__slider
+  height: 100px
+  margin-top: 40px
+  display: grid
+  grid-template-columns: 12% 76% 12%
+
+  i
+    color: #fff
+    font-size: 34px
+    font-weight: normal
+    display: flex
+    justify-content: center
+    align-items: center
+
+.section__footer
+  color: #fff
+  margin-top: 50px
