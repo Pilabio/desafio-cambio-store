@@ -1,12 +1,31 @@
 import React from 'react';
+import $ from 'jquery';
 
 export default class Simulator extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       value: this.props.last_value,
-      fullName: this.props.full_name
-    }
+      fullName: this.props.full_name,
+      code: this.props.code
+    };
+  }
+
+  handleFormSelect() {
+    const code = this.state.code;
+    const $options = $('.form__select option');
+
+    $('.form__select option[selected]').removeAttr('selected');
+
+    $options.each(function() {
+      if ($(this).val() == code) {
+        $(this).attr('selected', 'selected');
+      }
+    });
+  }
+
+  componentDidMount() {
+    this.handleFormSelect();
   }
 
   render() {
@@ -23,13 +42,10 @@ export default class Simulator extends React.Component {
             <span className='title--value'>{this.state.value}</span>
           </div>
 
-          <form action='/coins' method='post' className='form'>
-            <select className='form__select'>
+          <form action='/simulate' method='post' className='form'>
+            <select className='form__select' name='code'>
               <option value='USD'>USD</option>
               <option value='EUR'>EUR</option>
-            </select>
-
-            <select className='form__select'>
             </select>
 
             <input className='form__buttom' type='submit'/>
