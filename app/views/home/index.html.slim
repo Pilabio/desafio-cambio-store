@@ -7,7 +7,7 @@
       .card
         = react_component("Simulator", props: @coin.attributes, prerender: false)
 
-      .section__footer.section__footer--flags
+      .section__footer.section__footer--flags.d-none.d-lg-block
         .credit__flags
           .credit__flag
             = image_tag 'master_card.svg', size: '40x40'
