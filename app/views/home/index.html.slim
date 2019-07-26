@@ -7,6 +7,22 @@
       .card
         = react_component("Simulator", props: @coin.attributes, prerender: false)
 
+      .section__footer.section__footer--flags
+        .credit__flags
+          .credit__flag
+            = image_tag 'master_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'visa_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'amex_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'diners_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'aura_card.svg', size: '40x40'
+
+        .credit__title
+          | Pague com seu Cartão de crédito em até 12x
+
     .section.section--desktop.d-none.d-lg-block
       .section__body
         .section__title

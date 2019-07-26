@@ -31,5 +31,3 @@ export default class Simulator extends React.Component {
     );
   }
 }
-
-// <input className='form__buttom' type='submit'/>
