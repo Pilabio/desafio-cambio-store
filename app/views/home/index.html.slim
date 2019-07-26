@@ -1,2 +1,61 @@
-.card
-  = react_component("Simulator", props: @coin.attributes, prerender: false)
+.banner
+  .banner__content
+    .section
+      .section__title.d-lg-none
+        | Compare e compre online nas principais Casas de Câmbio do país.
+
+      .card
+        = react_component("Simulator", props: @coin.attributes, prerender: false)
+
+      .section__footer.section__footer--flags
+        .credit__flags
+          .credit__flag
+            = image_tag 'master_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'visa_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'amex_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'diners_card.svg', size: '40x40'
+          .credit__flag
+            = image_tag 'aura_card.svg', size: '40x40'
+
+        .credit__title
+          | Pague com seu Cartão de crédito em até 12x
+
+    .section.section--desktop.d-none.d-lg-block
+      .section__body
+        .section__title
+          | Compare e compre online nas principais Casas de Câmbio do país.
+
+        .section__subtitle
+          p Realize seu câmbio online em menos de 2 minutos de maneira rápida, fácil e 100% segura. Receba suas moedas onde quiser.
+
+        .section__slider
+          = fa_icon 'chevron-left'
+
+          .slider__card
+            .slider__image
+              = image_tag 'user_exemple.png'
+            .slider__text
+              p Recomendo. Encontrei as melhores taxas de câmbio e tudo ocorreu conforme combinado.
+              p Maio de 2018
+
+          = fa_icon 'chevron-right'
+
+      .section__footer
+        .footer
+          .footer__image
+            = image_tag 'medal.png', size: '60x60'
+          .footer__text
+            | Mais de<br /> <strong class='stronger'>100 mil</strong><br /> clientes<br /> <strong>satisfeitos</strong>
+        .footer
+          .footer__image
+            = image_tag 'ic_lock_outline_24px.png', size: '60x60'
+          .footer__text
+            | Câmbio <strong>100% seguro</strong><br /> parceiro <strong>autorizado</strong><br /> pelo <strong>Banco Central</strong>
+        .footer
+          .footer__image
+            = image_tag 'world.png', size: '60x60'
+          .footer__text
+            | Maior<br /> <strong class='stronger'>diversidade</strong><br /> de<br /> <strong class='stronger'>moedas</strong>

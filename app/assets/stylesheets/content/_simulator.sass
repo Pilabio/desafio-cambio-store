@@ -2,6 +2,7 @@
   display: flex
 
 .simulator__body
+  color: #707070
   padding: 2rem
   display: flex
   flex-direction: column
@@ -17,6 +18,10 @@
   flex-grow: 1
   align-items: center
   justify-content: center
+  font-size: 15px
+
+  @media (min-width: 1024px)
+    font-size: 17px
 
 .tab--left
   border-top-left-radius: 18px
@@ -24,15 +29,28 @@
 .tab--right
   border-top-right-radius: 18px
 
+  &:hover
+    cursor: pointer
+
 .tab--active
-  background-color: #fff
   color: #f65708
+  background-color: #fff
 
 // simulator body title
-.title
-  margin-bottom: 1.5rem
+.simulator__title
+  margin-bottom: 25px
+  font-size: 16px
+  display: flex
+  align-items: center
 
-.title--value
+  @media (min-width: 1024px)
+    font-size: 20px
+
+.simulator__title--value
+  color: #2dd393
   margin-left: 10px
+  font-weight: bold
+  font-size: 20px
 
-// simulator body form
+  @media (min-width: 1024px)
+    font-size: 33px

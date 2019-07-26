@@ -5,24 +5,25 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.5'
 
-gem 'bootsnap',       '>= 1.1.0', require: false
-gem 'coffee-rails',   '~> 4.2'
+gem 'bootsnap',           '>= 1.1.0', require: false
+gem 'coffee-rails',       '~> 4.2'
 # Use environment variables with dotenv
-gem 'dotenv-rails',   '~> 2.7', '>= 2.7.4'
-gem 'foreman',        '~> 0.85.0'
-gem 'jbuilder',       '~> 2.5'
-gem 'mini_racer',     platforms: :ruby
-gem 'pg',             '~> 1.1', '>= 1.1.4'
-gem 'puma',           '~> 3.11'
-gem 'rails',          '~> 5.2.3'
-gem 'react_on_rails', '~> 11.3'
-gem 'rest-client',    '~> 2.0', '>= 2.0.2'
-gem 'sass-rails',     '~> 5.0'
-gem 'slim',           '~> 4.0', '>= 4.0.1'
-gem 'thor',           '~> 0.19.1'
-gem 'turbolinks',     '~> 5'
-gem 'uglifier',       '>= 1.3.0'
-gem 'webpacker',      '~> 4.x'
+gem 'dotenv-rails',       '~> 2.7', '>= 2.7.4'
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.5'
+gem 'foreman',            '~> 0.85.0'
+gem 'jbuilder',           '~> 2.5'
+gem 'mini_racer',         platforms: :ruby
+gem 'pg',                 '~> 1.1', '>= 1.1.4'
+gem 'puma',               '~> 3.11'
+gem 'rails',              '~> 5.2.3'
+gem 'react_on_rails',     '~> 11.3'
+gem 'rest-client',        '~> 2.0', '>= 2.0.2'
+gem 'sass-rails',         '~> 5.0'
+gem 'slim',               '~> 4.0', '>= 4.0.1'
+gem 'thor',               '~> 0.19.1'
+gem 'turbolinks',         '~> 5'
+gem 'uglifier',           '>= 1.3.0'
+gem 'webpacker',          '~> 4.x'
 
 group :development, :test do
   gem 'better_errors',         '~> 2.5', '>= 2.5.1'

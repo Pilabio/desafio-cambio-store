@@ -1,5 +1,5 @@
 import React from 'react';
-import $ from 'jquery';
+import Form from './Form';
 
 export default class Simulator extends React.Component {
   constructor(props) {
@@ -11,23 +11,6 @@ export default class Simulator extends React.Component {
     };
   }
 
-  handleFormSelect() {
-    const code = this.state.code;
-    const $options = $('.form__select option');
-
-    $('.form__select option[selected]').removeAttr('selected');
-
-    $options.each(function() {
-      if ($(this).val() == code) {
-        $(this).attr('selected', 'selected');
-      }
-    });
-  }
-
-  componentDidMount() {
-    this.handleFormSelect();
-  }
-
   render() {
     return (
       <div className='simulator'>
@@ -37,19 +20,12 @@ export default class Simulator extends React.Component {
         </div>
 
         <div className='simulator__body'>
-          <div className='title'>
+          <div className='simulator__title'>
             {this.state.fullName}
-            <span className='title--value'>{this.state.value}</span>
+            <span className='simulator__title--value'>R$ {this.state.value}</span>
           </div>
 
-          <form action='/simulate' method='post' className='form'>
-            <select className='form__select' name='code'>
-              <option value='USD'>USD</option>
-              <option value='EUR'>EUR</option>
-            </select>
-
-            <input className='form__buttom' type='submit'/>
-          </form>
+          <Form code={this.state.code}/>
         </div>
       </div>
     );
