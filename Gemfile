@@ -14,7 +14,7 @@ gem 'foreman',            '~> 0.85.0'
 gem 'jbuilder',           '~> 2.5'
 gem 'mini_racer',         platforms: :ruby
 gem 'pg',                 '~> 1.1', '>= 1.1.4'
-gem 'puma',               '~> 3.11'
+gem 'puma',               '~> 4.3'
 gem 'rails',              '~> 5.2.3'
 gem 'react_on_rails',     '~> 11.3'
 gem 'rest-client',        '~> 2.0', '>= 2.0.2'
