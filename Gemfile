@@ -26,7 +26,7 @@ gem 'uglifier',           '>= 1.3.0'
 gem 'webpacker',          '~> 4.x'
 
 group :development, :test do
-  gem 'better_errors',         '~> 2.5', '>= 2.5.1'
+  gem 'better_errors',         '~> 2.8'
   gem 'bullet',                '~> 6.0', '>= 6.0.1'
   gem 'byebug',                platforms: %i[mri mingw x64_mingw]
   gem 'factory_bot_rails',     '~> 5.0', '>= 5.0.2'
